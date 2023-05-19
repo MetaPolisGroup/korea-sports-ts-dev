@@ -4,7 +4,7 @@ import { store } from "@/store";
 import axios, { AxiosResponse } from "axios";
 const axiosClient = axios.create({
   // baseURL: "https://seal-app-kptuj.ondigitalocean.app",
-  baseURL: "https://plankton-app-8lzob.ondigitalocean.app/",
+  baseURL: "https://seal-app-nhk46.ondigitalocean.app/",
   headers: {
     "Content-type": "application/json",
   },
