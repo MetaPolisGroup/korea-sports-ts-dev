@@ -1,0 +1,70 @@
+.mainStyle {
+  display: flex;
+  padding-top: 105px;
+  position: relative;
+  /* height: 100vh; */
+}
+
+.posAbsolute {
+  position: absolute;
+  width: 100%;
+}
+
+.only-desktop {
+  display: block;
+}
+
+.boxChildren {
+  width: calc(100% - 640px);
+  margin-top: 18px;
+  padding: 0 18px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.boxBetSlip {
+  position: sticky;
+  bottom: 0;
+}
+
+.boxBetSlip > div {
+  position: absolute;
+  bottom: 8.5%;
+  right: 0;
+  overflow: hidden;
+}
+
+.bet-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 1280px) {
+  .boxBetSlip {
+    display: none;
+  }
+
+  .content {
+    position: absolute;
+  }
+
+  .only-desktop {
+    display: none;
+  }
+
+  .boxChildren {
+    width: 100%;
+  }
+  .bet-mobile {
+    display: block;
+    padding: 20;
+    border-radius: 50%;
+    position: fixed;
+    top: 91%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    background-color: "white";
+  }
+}

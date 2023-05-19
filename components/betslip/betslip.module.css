@@ -1,0 +1,286 @@
+.betSlip {
+  width: 320px;
+  background-color: var(--color-darkblue-800);
+
+  position: sticky;
+  bottom: 0;
+  right: 0;
+  margin-left: auto;
+
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+
+  z-index: 99;
+  transition: all ease 0.5s;
+}
+
+.betData-block {
+  max-height: 240px;
+  overflow-y: scroll;
+}
+
+.betData-block::-webkit-scrollbar {
+  width: 6px;
+  background-color: transparent;
+}
+
+.betData-block::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(-45deg, #293241, #1c2532);
+  border-radius: 50px;
+}
+
+.betSlipMobile {
+  /* display: none; */
+  position: absolute !important;
+  bottom: 10px !important;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.boxTitle {
+  cursor: pointer;
+  padding: 14px;
+  background-color: var(--color-blue);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.boxTitle svg {
+  font-size: 22px;
+}
+
+.title {
+  font-size: 18px;
+}
+
+.alert {
+  color: var(--color-blue);
+  background-color: var(--color-white);
+  border-radius: 50%;
+  min-width: 20px;
+  text-align: center;
+  user-select: none;
+}
+
+.boxContent {
+  padding: 10px 5px;
+}
+
+.empty {
+  display: flex;
+}
+
+.empty p {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.empty svg {
+  font-size: 48px;
+}
+
+.offer {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 8px;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.styleInput {
+  width: 100%;
+  display: flex;
+  border-radius: 8px;
+  align-items: center;
+  padding: 10px 25px;
+  outline: none;
+  border-color: transparent;
+  text-align: right;
+  color: #000;
+  background-color: #fff;
+}
+
+.offer button {
+  color: var(--color-white);
+  background: hsla(0, 0%, 100%, 0.1);
+  border-radius: 24px;
+  width: 48%;
+}
+
+.icon-won {
+  top: 3px !important;
+}
+
+.offer button:focus {
+  background-color: var(--color-blue);
+}
+
+.mainContent {
+  display: flex;
+  min-height: 90px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  background: var(--color-darkblue-500);
+}
+
+.boostOdd {
+  position: relative;
+  margin-right: 5px;
+}
+
+.boostOdd::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  height: 100%;
+  width: 8px;
+  background-color: var(--color-lightgreen);
+  border-radius: 0 8px 8px 0;
+}
+
+.info {
+  width: 88%;
+  padding: 8px;
+}
+
+.info svg {
+  font-size: 14px;
+}
+
+.info input {
+  width: 145px;
+  color: #000;
+  background: #fff;
+  border: unset;
+  height: 23px;
+  border-radius: 5px;
+  text-align: right;
+  padding-right: 30px;
+}
+
+.info input:focus {
+  outline: none;
+}
+
+.matchName {
+  display: flex;
+  margin-bottom: 8px;
+  font-size: 12px;
+  gap: 10px;
+  align-items: center;
+}
+
+.subMatchName {
+  font-size: 11px;
+  color: var(--color-white-500);
+  margin-bottom: 10px;
+}
+
+.exchangeRate {
+  display: flex;
+  justify-content: space-between;
+}
+
+.betting {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.inputMoney {
+  position: relative;
+}
+
+.inputMoney div {
+  color: black;
+  position: absolute;
+  top: -3.5px;
+  right: 2px;
+  font-size: 12px;
+  user-select: none;
+  transform: translateY(50%);
+}
+
+.boxClose {
+  width: 40px;
+}
+
+.boxClose button {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  background: hsla(0, 0%, 100%, 0.1);
+  box-shadow: none;
+  border: unset;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  cursor: pointer;
+}
+
+.boxClose button svg {
+  font-size: 16px;
+  fill: var(--color-white);
+}
+
+.total,
+.totalGray {
+  margin: 6px 8px;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.totalGray {
+  color: var(--color-white-500);
+}
+
+.submit {
+  text-align: center;
+  padding-top: 16px;
+}
+
+.notification {
+  font-size: 14px;
+  text-align: center;
+  margin: 24px 0 12px;
+}
+
+.notification svg {
+  font-size: 14px;
+  fill: var(--color-white-500);
+}
+
+.submit button {
+  width: 80%;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 15px;
+}
+
+.formBest {
+  height: 500px;
+  overflow: scroll;
+}
+
+@media only screen and (max-width: 1280px) {
+  .betSlip {
+    opacity: 0;
+    max-height: 500px;
+    overflow: scroll;
+    z-index: 0;
+  }
+
+  .betSlipMobile {
+    opacity: 1;
+    overflow: scroll;
+  }
+}
+
+@media only screen and (min-width: 1601px) {
+  .formBest {
+    height: auto;
+  }
+}

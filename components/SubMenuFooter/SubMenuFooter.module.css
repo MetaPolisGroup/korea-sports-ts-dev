@@ -1,0 +1,102 @@
+.subMenu {
+  display: none;
+  width: 100%;
+  height: 60px;
+  padding: 10px 0;
+  background-color: rgb(34, 34, 39);
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+}
+
+.boxItem {
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.boxItemBet {
+  height: 100%;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.boxItemBet .item {
+  width: 30%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.item a {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+  gap: 3px;
+}
+
+.item a img {
+  padding-left: 10px;
+  width: auto;
+  height: auto;
+}
+
+.item > div {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.drawerContent {
+  padding: 15px;
+  min-width: 170px;
+  color: var(--color-white);
+  background: var(--color-darkblue-800);
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.drawerHeader {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.drawerHeader svg {
+  cursor: pointer;
+}
+
+.drawerContent::-webkit-scrollbar {
+  width: 10px;
+}
+
+.drawerContent::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #0f40462f;
+}
+
+.drawerContent :global(.show-in-drawer) {
+  display: block !important;
+}
+
+.itemBetslip {
+  background-color: var(--color-blue);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1280px) {
+  .subMenu {
+    display: block;
+  }
+  .boxItem {
+    display: flex;
+  }
+}

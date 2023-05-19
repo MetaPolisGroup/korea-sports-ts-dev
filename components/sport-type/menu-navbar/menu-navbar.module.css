@@ -1,0 +1,16 @@
+.menu-navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px;
+  height: 64px;
+}
+
+.menu-navbar ul li {
+  list-style: none;
+  padding: 8px;
+}
+
+.active svg {
+  color: var(--color-blue) !important;
+}

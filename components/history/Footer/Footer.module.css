@@ -1,0 +1,51 @@
+@media only screen and (max-width: 1024px) {
+  .boxBtn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    row-gap: 6px;
+  }
+
+  .boxBtn .btnStatus {
+    width: 100%;
+  }
+
+  .boxBtn .btnCancel {
+    width: 90%;
+    margin: unset !important;
+  }
+
+  .boxBtn .btnDel {
+    padding: unset !important;
+    width: 10%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    min-width: unset !important;
+  }
+
+  .boxBtn .btnDel span {
+    margin: unset !important;
+    padding: unset !important;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .boxBtn {
+    width: 50%;
+  }
+  .boxBtn .btnStatus {
+    width: 100%;
+  }
+
+  .boxBtn .btnCancel {
+    width: 80%;
+    padding: 5px !important;
+    margin-right: unset !important;
+  }
+
+  .boxBtn .btnDel {
+    padding: unset !important;
+    width: 20%;
+  }
+}

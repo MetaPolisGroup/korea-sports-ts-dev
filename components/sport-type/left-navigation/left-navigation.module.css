@@ -1,0 +1,45 @@
+.LeftNav {
+  padding: 0 16px 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1%;
+}
+
+.LeftNav button {
+  color: var(--color-white);
+  width: 32.5%;
+  height: 40px;
+  border: unset;
+  font-size: 11px;
+  cursor: pointer;
+  background-color: var(--color-grey-800);
+  margin-bottom: 1%;
+  border-radius: 4px;
+}
+
+.LeftNav button:hover {
+  background-color: var(--color-blue);
+}
+
+.btnHeader {
+  width: 49.5% !important;
+  background-color: #2b3544 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  margin-bottom: 6px;
+}
+
+.btnHeader svg {
+  font-size: 14px;
+}
+
+.green {
+  color: #66c442;
+}
+
+.red {
+  color: #a94442;
+}

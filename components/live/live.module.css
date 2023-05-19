@@ -1,0 +1,10 @@
+.liveLeftSide {
+  overflow-y: auto;
+  max-height: 1040px;
+}
+
+@media only screen and (max-width: 1280px) {
+  .boxLoading {
+    height: calc(100vh - 360px);
+  }
+}

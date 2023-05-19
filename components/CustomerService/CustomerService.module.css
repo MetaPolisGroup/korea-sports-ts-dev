@@ -1,0 +1,157 @@
+.customerService {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1%;
+}
+
+.customerService .left {
+  width: 30%;
+}
+
+.customerService .right {
+  width: 69%;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-color: rgb(25, 33, 43);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.left > form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.left > form input {
+  background-color: white;
+  color: black;
+  border-radius: 4px;
+  padding: 4px 12px;
+}
+
+.ticketList {
+  margin-top: 12px;
+  height: 60vh;
+  overflow-y: scroll;
+}
+
+.ticketList > div,
+.unActive {
+  cursor: pointer;
+  padding: 10px;
+  background-color: rgb(25, 33, 43) !important;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.boxChatMoblie {
+  display: none;
+}
+
+.ticketList > div:hover {
+  background-color: var(--color-blue);
+}
+
+.ticketList > div > p:last-child {
+  font-size: 12px;
+}
+
+.ticketList .active {
+  background-color: var(--color-blue) !important;
+}
+
+.boxChat {
+  height: 70vh;
+  overflow-y: scroll;
+}
+
+.boxChat > div {
+  margin-bottom: 12px;
+  width: 80%;
+  display: flex;
+}
+
+.boxChat > div > div {
+  word-wrap: break-word;
+  hyphens: auto;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #2b3544;
+}
+
+.sender {
+  display: flex;
+  justify-content: flex-end;
+  width: 100% !important;
+}
+
+.sender div {
+  width: 80%;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: var(--color-blue) !important;
+}
+
+.boxReply {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.boxReply input {
+  width: 79%;
+  height: 32px;
+  padding: 5px;
+  border: unset;
+  color: black;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.boxReply button {
+  width: 20%;
+  height: 32px;
+  cursor: pointer;
+  border: unset;
+  border-radius: 4px;
+  background-color: #2283f6ba;
+}
+
+.boxReply button:hover {
+  background-color: var(--color-blue);
+}
+
+.error {
+  font-size: 13px;
+  color: red;
+}
+
+@media only screen and (max-width: 768px) {
+  .boxChatMoblie {
+    display: block;
+    background-color: #2b3544 !important;
+  }
+
+  .right {
+    display: none !important;
+  }
+
+  .customerService .left,
+  .customerService .right {
+    width: 100%;
+  }
+
+  .customerService .left {
+    margin-top: 20px;
+  }
+
+  .boxChat {
+    max-height: 480px;
+    overflow-y: auto;
+  }
+}

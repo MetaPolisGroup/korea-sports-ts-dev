@@ -1,0 +1,7 @@
+.wrapper-minigame {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, 150px);
+  gap: 16px;
+}

@@ -1,0 +1,71 @@
+.listCard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.listCard a {
+  width: 18.5%;
+  display: block;
+}
+
+.itemCard {
+  width: 100%;
+  max-height: 270px;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.5s ease;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.itemCard:hover {
+  opacity: 0.6;
+}
+
+@media only screen and (max-width: 1280px) {
+  .listCard {
+    /* justify-content: flex-start; */
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .listCard a {
+    width: 16.5%;
+    display: block;
+  }
+
+  .itemCard {
+    max-height: 220px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .listCard {
+    justify-content: flex-start;
+  }
+
+  .listCard a {
+    width: 30%;
+  }
+
+  .itemCard {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .listCard {
+    flex-wrap: wrap;
+    row-gap: 6px;
+  }
+
+  .listCard a {
+    width: 46%;
+  }
+
+  .itemCard {
+    width: 100%;
+  }
+}

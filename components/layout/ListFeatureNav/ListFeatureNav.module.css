@@ -1,0 +1,248 @@
+.header-mid {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+}
+
+.header-mid svg {
+  font-size: 16px;
+}
+
+.header-mid button {
+  display: flex;
+  text-align: center;
+  cursor: pointer;
+  gap: 2px;
+  padding: 5px;
+  border: unset;
+  font-size: 12px;
+  border-radius: 12px;
+  color: var(--color-white);
+  background-color: #2b3544;
+}
+
+.header-mid button:hover {
+  background-color: var(--color-blue);
+}
+
+.header-mid .deposit svg {
+  color: #66c442;
+}
+
+.header-mid .withdraw svg {
+  color: #a94442;
+}
+
+.header-mid .customerSV svg {
+  color: #f59c1a;
+}
+
+.header-mid .mail svg {
+  color: #00acac;
+}
+
+.header-mid .notificationsIcon {
+  padding: unset !important;
+  background-color: unset !important;
+}
+
+.header-mid .notificationsIcon svg {
+  font-size: 24px;
+}
+
+.header-mid .logout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-blue);
+  margin-left: 12px;
+}
+
+.header-mid .time {
+  width: 110px;
+}
+
+.alert {
+  position: relative;
+  cursor: pointer;
+}
+
+.alert > div {
+  min-width: 17px;
+  height: 17px;
+  font-size: 12px;
+  position: absolute;
+  top: -12px;
+  right: -5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-blue);
+  border-radius: 50%;
+  user-select: none;
+}
+
+.alert svg {
+  color: gray;
+}
+
+.active svg {
+  color: var(--color-white) !important;
+}
+
+.drawerAlert > :global(.MuiBackdrop-root) {
+  opacity: 0.1 !important;
+}
+
+.drawerAlert > :global(.MuiPaper-root) {
+  margin-top: 106px;
+  width: 320px;
+  background-color: var(--color-header-background);
+  color: var(--color-white);
+  border-radius: 12px;
+  height: calc(100% - 106px);
+  overflow-y: unset !important;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.body > div:last-child {
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background-color: #2b3544;
+  width: 100%;
+  height: 55px;
+  min-height: 55px;
+  color: var(--color-blue);
+}
+
+.drawerAlert .title {
+  display: flex;
+  justify-content: space-between;
+  background-color: #2b3544;
+  padding: 10px;
+}
+
+.drawerAlert .title svg {
+  cursor: pointer;
+}
+
+.drawerAlert .content {
+  padding: 10px;
+  height: 70vh;
+  overflow-y: scroll;
+}
+
+.drawerAlert .content .boxBtn {
+  display: flex;
+  justify-content: center;
+}
+
+.drawerAlert .content .boxBtn button {
+  cursor: pointer;
+  background-color: unset !important;
+  color: var(--color-white);
+  border: unset;
+  border-radius: 4px;
+}
+
+.boxNoti {
+  background-color: var(--color-grey-800);
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.boxNoti > div {
+  padding: 0 10px;
+}
+.boxNoti > div:first-child {
+  padding-top: 10px;
+}
+.boxNoti > div:last-child {
+  padding-bottom: 10px;
+}
+
+.boxNoti > div:nth-child(1) {
+  color: var(--color-white-500);
+  font-size: 12px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.boxNoti > div:nth-child(1) > div {
+  color: var(--color-white) !important;
+  background-color: var(--color-blue);
+  padding: 5px;
+  border-radius: 16px;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.boxNoti > div:nth-child(2) {
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.boxNoti > div:nth-child(3) {
+  color: var(--color-white-500);
+  font-size: 14px;
+  margin-bottom: 10px;
+  line-height: 22px;
+}
+
+.boxNoti > div:nth-child(4) {
+  border-top: 1px solid #2b3544;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 12px;
+  padding-top: 10px;
+}
+
+.boxNoti > div:nth-child(4) > div {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--color-blue);
+}
+
+.boxNoti > div:nth-child(4) svg {
+  font-size: 12px;
+}
+
+.hiddenDetail {
+  display: block;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.boxShowMore {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.boxShowMore > div {
+  display: flex;
+  align-items: center;
+  color: var(--color-white);
+  cursor: pointer;
+}

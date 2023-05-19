@@ -1,0 +1,246 @@
+.headerKorea {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 110;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+  padding: 0 24px;
+  background-color: var(--color-header-background);
+  justify-content: space-between;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+.header-right ul {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+.header-right ul > li {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.sub-header {
+  width: 100%;
+  background-color: var(--color-grey-800);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid var(--color--main-background);
+}
+.sub-header ul {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+}
+.sub-header ul > li {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.text {
+  transition: all 0.2s ease-in-out;
+}
+.text:hover {
+  transform: scale(1.1);
+}
+
+.responsive-header-left,
+.responsive-header-right,
+.responsive-header-main {
+  display: none;
+}
+
+.short-info {
+  display: none;
+}
+
+.notShowDesk {
+  display: none;
+}
+
+@media only screen and (max-width: 1280px) {
+  .header {
+    height: 74px;
+    align-items: center;
+  }
+
+  .notShowDesk {
+    display: block;
+  }
+
+  .short-info {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -26px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 2px 15px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .short-info > div {
+    display: flex;
+    font-size: 12px;
+    justify-content: center;
+    margin-right: 22px;
+  }
+
+  .short-info span {
+    margin-left: 10px;
+  }
+
+  .poin {
+    display: flex;
+  }
+
+  .poin > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    background-color: #a8a8a8;
+    font-size: 12px;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+  }
+
+  .header-left,
+  .header-right,
+  .sub-header {
+    display: none;
+  }
+
+  .responsive-header-left,
+  .responsive-header-right,
+  .responsive-header-main {
+    display: block;
+    cursor: pointer;
+  }
+
+  .responsive-header-left button,
+  .responsive-header-right button {
+    background-color: #223249;
+  }
+
+  .responsive-header-left button:hover,
+  .responsive-header-right button:hover {
+    background-color: var(--color-blue);
+  }
+
+  .responsive-header-left svg,
+  .responsive-header-right svg {
+    fill: var(--color-white);
+  }
+
+  .drawerLeft,
+  .drawerRight {
+    padding: 15px;
+    min-width: 170px;
+    color: var(--color-white);
+    background-color: var(--color-header-background);
+  }
+
+  .headerDrawer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+
+  .headerDrawer svg {
+    cursor: pointer;
+    font-size: 32px;
+  }
+
+  .drawerRight {
+    overflow-y: auto;
+    min-height: 100vh;
+  }
+
+  .drawerLeft {
+    width: 100vw;
+    overflow-y: auto;
+    min-height: 100vh;
+  }
+
+  .drawerLeft .contentDrawer > ul {
+    list-style-type: none;
+  }
+
+  .drawerLeft .contentDrawer > ul a {
+    background-color: #223249;
+    margin-bottom: 10px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .drawerLeft .contentDrawer > ul a li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 145px;
+  }
+
+  .drawerLeft .contentDrawer > ul li img,
+  .drawerLeft .contentDrawer > ul li svg {
+    width: 35px;
+    height: 35px;
+    padding-right: 8px;
+  }
+
+  .drawerLeft .footer-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    flex-direction: column;
+  }
+
+  .drawerLeft .footer-menu .term-conditions {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .drawerLeft .footer-menu .term-conditions h4 {
+    margin: 0 10px;
+  }
+
+  .drawerLeft .footer-menu .term-conditions h4:first-child {
+    padding-right: 20px;
+    border-right: 1px solid #fff;
+  }
+
+  .drawerLeft .footer-menu .socials {
+    display: flex;
+    gap: 5px;
+  }
+}
+
+@media (width >= 1280px) and (width <= 1451px) {
+  .header-right ul > li {
+    font-size: 12px;
+    font-weight: bold;
+  }
+}

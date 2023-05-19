@@ -1,0 +1,61 @@
+.wrapper-title .date {
+  width: 100px;
+  display: inline-block;
+  line-height: 25px;
+  color: #fff;
+  font-size: 0.74rem;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 5px;
+  background: hsla(0, 0%, 100%, 0.3);
+  font-size: 10px;
+}
+
+.wrapper-title {
+  display: flex;
+  align-items: center;
+  gap: 0 5px;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 10px 5px;
+}
+
+.wrapper-title-right .date {
+  width: 30px;
+  height: 25px;
+  display: inline-block;
+  line-height: 25px;
+  color: #fff;
+  font-size: 0.74rem;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 5px;
+  background: hsla(0, 0%, 100%, 0.3);
+}
+
+.ss-sec {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.ss {
+  display: block;
+  padding: 10px;
+  background: #2b3544;
+  font-weight: 700;
+  font-size: 16px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+
+.wrapper-title-right {
+  display: flex;
+  align-items: center;
+  gap: 0 5px;
+  background-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}

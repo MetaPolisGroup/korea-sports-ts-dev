@@ -1,0 +1,40 @@
+.tabs-label {
+  color: var(--color-white);
+}
+
+.videoBox {
+  height: 100vh;
+  width: 100%;
+}
+
+.videoStyle {
+  height: 100%;
+}
+
+.styleModal > div:first-child {
+  background-color: unset;
+}
+
+.headContent {
+  width: 100%;
+  text-align: center;
+}
+
+.headContent p {
+  margin-bottom: 12px;
+}
+
+.brand {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 18px;
+}
+
+.subTitle {
+  font-size: 10px;
+  color: #acacac;
+  margin-bottom: 18px;
+}

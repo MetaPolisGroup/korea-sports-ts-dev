@@ -1,0 +1,67 @@
+.popular-now {
+  padding: 0 16px 16px;
+}
+
+.popular-title {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.popular-title span {
+  margin-left: 10px;
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  cursor: default;
+}
+
+.leagues-item {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-darkblue-500);
+  align-items: center;
+  margin-bottom: 6px;
+  padding: 5px 8px;
+  border-radius: 8px;
+}
+
+.leagues-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+
+.leagues-image {
+  width: 20px;
+  height: 20px;
+  background-color: var(--color-white);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leagues-name {
+  color: var(--color-white-500);
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.leagues-name:hover {
+  color: var(--color-white);
+}
+
+.leagues-quality {
+  padding: 3px;
+  border-radius: 4px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  border: 2px solid var(--color-blue);
+}
+
+.leagues-quality span {
+  font-size: 14px;
+}

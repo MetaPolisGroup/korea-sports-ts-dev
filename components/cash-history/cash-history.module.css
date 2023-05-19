@@ -1,0 +1,17 @@
+@media only screen and (max-width: 768px) {
+  .table {
+    width: 95.5vw !important;
+    margin: auto;
+    overflow-x: scroll !important;
+  }
+
+  .table table {
+    background: rgb(43, 53, 68);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .table {
+    width: 92vw !important;
+  }
+}

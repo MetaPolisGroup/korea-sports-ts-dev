@@ -1,0 +1,25 @@
+.sport-types {
+  width: 320px;
+  height: 100%;
+  background: var(--color-darkblue-800);
+}
+
+.games-block {
+  display: flex;
+  width: calc(100%-62px);
+}
+
+.sport-types-header > h1 {
+  background: var(--color-grey-800);
+  color: var(--color-text);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 52px;
+  margin: 0;
+  text-align: center;
+  width: 95%;
+}
+
+.sport-types-header {
+  width: 95%;
+}

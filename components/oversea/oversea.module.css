@@ -1,0 +1,28 @@
+.boxBonus {
+  padding: 8px 0 0 8px;
+  border-radius: 6px;
+  margin-right: 8px;
+  background-color: var(--color-darkblue-500);
+}
+
+.btnBonus {
+  height: 50px;
+  font-weight: bold !important;
+  cursor: unset !important;
+  background-color: #2b3544 !important;
+}
+
+.btnBonus:hover {
+  background-color: #2b3544 !important;
+}
+
+.btnBonusActive {
+  height: 50px;
+  font-weight: bold !important;
+  cursor: unset !important;
+  background-color: #2283f6 !important;
+}
+
+.btnBonusActive:hover {
+  background-color: #2283f6 !important;
+}

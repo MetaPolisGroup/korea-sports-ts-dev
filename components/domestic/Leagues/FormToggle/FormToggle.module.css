@@ -1,0 +1,38 @@
+.btnTooltop {
+  background-color: unset;
+  border: unset;
+  padding: 6px 0;
+}
+
+.team {
+  color: var(--color-white);
+  width: 100%;
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.odds {
+  font-weight: 600;
+}
+
+.btnRemove {
+  border-radius: 6px !important;
+}
+
+.btnRemove svg {
+  fill: #2b3544 !important;
+}
+
+.btnRemove {
+  cursor: unset !important;
+}
+
+.btnRemove:hover {
+  background-color: #19212b !important;
+}

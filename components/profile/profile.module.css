@@ -1,0 +1,35 @@
+.profile {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.title-profile {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  bottom: -20px;
+  background-color: #121923;
+}
+.point {
+  border: 1px solid;
+  border-radius: 100%;
+  padding: 2px 8px;
+  background-color: #a8a8a8;
+  color: #2c3645;
+}
+
+.btnLogout {
+  margin: 0 30px !important;
+  color: #fff !important;
+}
+
+.btnLogout svg {
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.btnLogout:hover {
+  color: var(--color-blue) !important;
+}

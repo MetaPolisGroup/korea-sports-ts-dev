@@ -1,0 +1,96 @@
+.title {
+  margin: 10px 0 20px 15px;
+  display: flex;
+  gap: 22px;
+}
+
+.title h1 {
+  font-size: 25px;
+  color: #ffff83;
+  margin-bottom: 7px;
+}
+
+.title P {
+  font-size: 15px;
+  font-weight: bold;
+  color: #a9a8a9;
+  line-height: 18px;
+}
+
+.title P span {
+  color: #a96614;
+}
+
+.boxGameContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 12px;
+}
+
+.game {
+  width: 32.3%;
+  cursor: pointer;
+  position: relative;
+}
+
+.content {
+  position: relative;
+}
+
+.game:hover .content {
+  opacity: 0.3;
+}
+
+.game:hover .iconHover {
+  opacity: 1;
+  border-radius: 6px;
+}
+
+.name {
+  position: absolute;
+  bottom: 15%;
+  left: 5%;
+  border: 1px solid #434347;
+  border-radius: 3px;
+  background: #2d2e35;
+  width: 120px;
+  height: 25px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.content img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.iconHover {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 98%;
+  border: 2px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right bottom, #e7d48a, #c6612c);
+}
+
+@media only screen and (max-width: 800px) {
+  .game {
+    width: 49%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .game {
+    width: 100%;
+  }
+}

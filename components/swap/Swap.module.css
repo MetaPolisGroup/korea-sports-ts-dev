@@ -1,0 +1,26 @@
+.input-field {
+  margin-top: 10px;
+  background: #fff;
+  width: 250px;
+  height: 35px;
+  border-radius: 2px;
+}
+
+.swap-point {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  gap: 60px;
+}
+
+@media only screen and (max-width: 1700px) {
+  .input-field {
+    width: 350px;
+  }
+  .swap-point {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

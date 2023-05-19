@@ -1,0 +1,5 @@
+@media only screen and (max-width: 1280px) {
+  .boxLoading {
+    height: calc(100vh - 320px);
+  }
+}

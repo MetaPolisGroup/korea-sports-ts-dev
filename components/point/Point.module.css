@@ -1,0 +1,31 @@
+.input-field {
+  background: #fff;
+  width: 95%;
+  height: 35px;
+  border-radius: 2px;
+  margin-left: 5px;
+  padding: 0 10px;
+}
+
+.form {
+  width: 70%;
+  margin: 18px auto 0;
+  padding: 28px 16px;
+  background: var(--color-grey-800);
+  border-radius: 10px;
+  text-align: center;
+
+  display: flex;
+}
+
+.form > div {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.form > div > p {
+  margin-top: 5px;
+  color: var(--color-lightRed);
+}

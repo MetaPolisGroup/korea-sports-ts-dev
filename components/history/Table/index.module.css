@@ -1,0 +1,21 @@
+.wrapper-table table > tbody > tr :nth-of-type(2) {
+  padding: 0;
+}
+
+.wrapper-table {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.wrapper-table table {
+  min-width: 1400px !important ;
+  overflow-x: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper-table {
+    width: 90vw !important;
+    margin: auto;
+    overflow-x: scroll !important;
+  }
+}

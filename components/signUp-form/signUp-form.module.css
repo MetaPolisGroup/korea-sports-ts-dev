@@ -1,0 +1,23 @@
+.boxFormSignUp {
+  height: 60vh;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.boxFormSignUp::-webkit-scrollbar {
+  width: 6px;
+  background-color: transparent;
+}
+
+.boxFormSignUp::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(-45deg, #293241, #1c2532);
+  border-radius: 50px;
+}
+
+.boxFormSignUp .fieldCheckValue {
+  display: none;
+}
+
+.boxFormCheckKey .fieldSignUp {
+  display: none;
+}

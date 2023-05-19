@@ -1,0 +1,31 @@
+.games {
+  width: 62px;
+}
+
+.games ul li {
+  position: relative;
+  list-style: none;
+  padding: 10px;
+  text-align: center;
+}
+
+.games ul li button {
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.active {
+  background: #161f2c;
+}
+
+.active::after {
+  content: "";
+  display: block;
+  background: var(--color-blue);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 100%;
+}
